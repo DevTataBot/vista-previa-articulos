@@ -65,7 +65,7 @@ body{
 .share{
     position: relative;
     display: inline-flex;
-    background-color:#edf2f8;
+    background-color:rgb(237, 242, 248);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -74,11 +74,14 @@ body{
     left: 148px;
     cursor: pointer;
 }
-.share a{    
-    color:#6d8098;
+.share img{
+    width: 18px;
+    height: 18px;
+    border-radius: 0;
 }
-.share a:hover{
-    color: #edf2f8;
+.share img:hover{
+    -webkit-filter: brightness(200%) contrast(200%) grayscale(100%) sepia(30%);
+    filter: brightness(200%) contrast(200%) grayscale(100%) sepia(30%);
 }
 .share:hover{
     background-color:#6d8098;
@@ -95,8 +98,16 @@ body{
     
 }
 .social-active a{
-    color: #fff;
-    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-active img{
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
 }
 .social-active{
     position: absolute;
@@ -164,7 +175,7 @@ footer{
     }
     .social-resp{
         position: absolute;
-        padding-right: 70px;
+        padding-right: 80px;
         width: 65%;
         height: 75px;
         margin-bottom: -18px;
@@ -181,8 +192,16 @@ footer{
         letter-spacing: 8px;
     }
     .social-resp a{
-        color: #fff;
-        font-size: 28px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-resp img{
+        width: 30px;
+        height: 30px;
+        border-radius: 0;
     }
 }
 @media screen and (max-width:499px){
@@ -240,7 +259,15 @@ footer{
         letter-spacing: 8px;
     }
     .social-resp a{
-        color: #fff;
-        font-size: 28px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-resp img{
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
     }
 }
